@@ -11,7 +11,7 @@ import org.springframework.jdbc.datasource.DriverManagerDataSource;
  * @author DIGINAMIC
  */
 @Configuration
-public class DataSourceMySQLConfig {
+public class DataSourceConfig {
 	
 	@Value("${spring.datasource.driver-class-name}")
 	private String driver;

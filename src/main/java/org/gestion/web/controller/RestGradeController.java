@@ -23,13 +23,11 @@ public class RestGradeController {
 	private GradeRepository gradeRepository;
 	
 	@RequestMapping(path="/withJpa", method = RequestMethod.GET)
-	@ResponseBody
 	public List<Grade> listeEmployesWithJpa() {
 		return gradeService.lister();
 	}
 	
 	@RequestMapping(path="/withRepository", method = RequestMethod.GET)
-	@ResponseBody
 	public List<Grade> listeEmployesWithRepository() {
 		return gradeRepository.findAll();
 	}

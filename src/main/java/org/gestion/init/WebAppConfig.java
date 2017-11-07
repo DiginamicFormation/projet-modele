@@ -1,5 +1,5 @@
 package org.gestion.init;
-import org.gestion.config.DataSourceMySQLConfig;
+import org.gestion.config.DataSourceConfig;
 import org.gestion.config.JpaConfig;
 import org.gestion.config.ServicesConfig;
 import org.springframework.context.annotation.Bean;
@@ -16,7 +16,7 @@ import org.springframework.web.servlet.view.InternalResourceViewResolver;
 @CrossOrigin
 @Configuration
 @EnableWebMvc
-@Import({ServicesConfig.class, JpaConfig.class, DataSourceMySQLConfig.class})
+@Import({ServicesConfig.class, JpaConfig.class, DataSourceConfig.class})
 public class WebAppConfig {
 
 	@Bean
